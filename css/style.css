@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f7fe;
+    font-family: 'Quicksand', sans-serif;
+    
+    display: flex;
+}
+
+
+/* ---------------------PADRÕES--------------------- */
+button{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: none;
+    background-color: white;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+strong{
+    color: blueviolet;
+}
+
+
+/* CONTEUDO LADO ESQUERDO */
+div .conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* ---------------------MENU--------------------- */
+header{
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    width: 6.3rem;
+}
+header button{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1rem;
+    font-weight: 600;
+}
+
+
+/* CONTEÚDO PRINCIPAL */
+main{
+    margin: auto;
+    max-width: 70rem;
+    padding: 0 15rem;
+}
+
+
+/* ---------------------TÍTULOS--------------------- */
+#titulo h1{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+#titulo h2{
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+
+/* ---------------------DISPLAY--------------------- */
+#display{
+    padding: 2rem 0;
+}
+#display .calculo{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+#display .resultado{
+    font-size: 3.0rem;
+    font-weight: 600;
+}
+ 
+
+/* ---------------------TECLAS--------------------- */
+#teclas{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    row-gap: 0.7rem;
+    column-gap: 1.5rem;
+    margin-right: 2rem;
+}
+.operadores{
+    background-color: blueviolet;
+    height: 3rem;
+    border-radius: 2rem;
+    color: white;
+}
+.moedas-btn, .botaoConverter button{
+    width: 100%;
+    height: 4.5rem;
+    border-radius: 1.5rem;
+    background-color: blueviolet;
+    color: white;
+}
+.moedas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.botaoConverter{
+    grid-column: 1/3;
+    margin: 2rem 0;
+} 
+
+
+/* ---------------------RODAPÉ--------------------- */
+footer{
+    text-align: center;
+}
+
+
+/* CONTEUDO LADO DIREITO */
+.banner{
+    width: 50%;
+    overflow-x: hidden;
+    border-top-left-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
