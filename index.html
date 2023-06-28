@@ -7,22 +7,37 @@
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fontawesome-free-6.4.0-web/css/all.min.css">
+    <script src="script/script.js" defer></script>
 </head>
 <body>
     <div class="conteudo">
         <header>
             <div class="line-mobile"></div>
 
-            <nav>
+            <div class="menu">
                 <img src="assets/logo-coin.png" alt="logo da COIN">
-                <button class="registrar">Registrar</button>
-            </nav>
+                <!-- <img src="assets/logo-coin-dark.png" alt="logo da COIN"> -->
+                <nav>
+                    <span>
+                        <input type="checkbox" id="checkbox-theme">
+
+                        <label for="checkbox-theme">
+                            <i class="fa-solid fa-sun"></i>
+                            <i class="fa-solid fa-moon"></i>
+
+                            <div class="circulo"></div>
+                        </label>
+                    </span>
+
+                    <button class="registrar">Registrar</button>
+                </nav>
+            </div>
         </header>
         
         <main>
             <section id="titulo">
-                <h1>Converta Coin</h1>
-                <h2>Dificuldades em calcular? Agora ficou <strong>mais fácil!</strong></h2>
+                <h2>Converta Coin</h2>
+                <h1>Dificuldades em calcular? Agora ficou <strong>mais fácil!</strong></h1>
             </section>
 
             <section id="display">
@@ -32,25 +47,25 @@
 
             <section id="teclas">
                 <div class="calculadora">
-                    <button>C</button>
-                    <button><i class="fa-solid fa-delete-left"></i></button>
-                    <button>%</button>
+                    <button class="btn-padrao">C</button>
+                    <button class="btn-padrao"><i class="fa-solid fa-delete-left"></i></button>
+                    <button class="btn-padrao">%</button>
                     <button class="operadores">/</button>
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
+                    <button class="btn-padrao">7</button>
+                    <button class="btn-padrao">8</button>
+                    <button class="btn-padrao">9</button>
                     <button class="operadores">x</button>
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
+                    <button class="btn-padrao">4</button>
+                    <button class="btn-padrao">5</button>
+                    <button class="btn-padrao"">6</button>
                     <button class="operadores">-</button>
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
+                    <button class="btn-padrao">1</button>
+                    <button class="btn-padrao">2</button>
+                    <button class="btn-padrao">3</button>
                     <button class="operadores">+</button>
-                    <button>00</button>
-                    <button>0</button>
-                    <button>,</button>
+                    <button class="btn-padrao">00</button>
+                    <button class="btn-padrao">0</button>
+                    <button class="btn-padrao">,</button>
                     <button class="operadores">=</button>
                 </div>
 
