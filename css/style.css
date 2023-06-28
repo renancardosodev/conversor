@@ -75,6 +75,10 @@ header {
     padding: 0 2rem;
 }
 
+.logo-dark {
+    display: none;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -368,7 +372,6 @@ footer {
     background-color: var(--fundoDark);
 }
 
-
 .dark .btn-padrao {
     background-color: var(--botaoDark);
     color: var(--textoDark);
@@ -377,6 +380,14 @@ footer {
 .dark .btn-padrao:active {
     background-color: var(--botaoLightActive);
     color: var(--corDestaque);
+}
+
+.dark .logo-light {
+    display: none;
+}
+
+.dark .logo-dark {
+    display: block;
 }
 
 .dark .conteudo {
