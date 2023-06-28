@@ -166,14 +166,15 @@ main {
 #titulo h2 {
     margin-top: 2rem;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--textoLightSecundario);
 }
 
 #titulo h1 {
     margin-bottom: 1.5rem;
-    font-size: 2.7rem;
-    font-weight: 700;
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 
@@ -189,7 +190,7 @@ main {
 }
 
 #display .resultado {
-    font-size: 3.5rem;
+    font-size: 3.0rem;
     font-weight: 600;
     overflow-x: auto;
     overflow-y: hidden;
@@ -414,7 +415,10 @@ footer {
     color: var(--textoDarkSecundario);
 }
 
-.dark #titulo h1,
+.dark #titulo h1 {
+   color: rgba(255, 255, 255, 0.6);
+}
+
 .dark #display .resultado {
    color: var(--textoDark);
 }
@@ -422,7 +426,7 @@ footer {
 .dark ::-webkit-scrollbar-thumb {
     background-color: var(--textoDarkSecundario);
 }
-    
+
 @media screen and (max-width: 760px) {
     .dark .btn-padrao {
         background-color: transparent;
@@ -431,5 +435,9 @@ footer {
 
     .dark .btn-padrao:active {
         background-color: var(--botaoDark);
+    }
+
+    .dark .line-mobile {
+        background-color: var(--textoDarkSecundario);
     }
 }
