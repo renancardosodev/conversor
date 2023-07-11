@@ -184,12 +184,14 @@ main {
 }
 
 #display .calculo {
+    height: 2rem;
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--textoLightSecundario);
 }
 
 #display .resultado {
+    height: 3.2rem;
     font-size: 3.0rem;
     font-weight: 600;
     overflow-x: auto;
@@ -261,6 +263,10 @@ main {
 .operadores:active {
     background-color: rgb(102, 32, 168);
     color: var(--textoDark);
+}
+
+.btn-padrao span{
+    color: transparent;
 }
 
 
